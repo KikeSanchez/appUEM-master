@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Ribbit"
+    tools:context="com.rcl.appuem.LoginActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/subtitle"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/editTextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/userNameField"
+            style="@style/Ribbit_EditText"
+            android:hint="@string/username_Hint"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_color">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:hint="@string/password_Hint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/light_gray"
+            style="@style/Ribbit_EditText" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_alignStart="@+id/passwordField"
+            android:layout_below="@+id/passwordField"
+            android:hint="@string/email_hit"
+            android:inputType="textEmailAddress"
+            style="@style/Ribbit_EditText"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextlayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider"
+        android:contentDescription=" "/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/sign_up_button_label"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextlayout"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/buttonDivider"
+        android:layout_marginRight="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_custom"
+        android:textColor="@color/text_color"
+        android:textSize="13sp"
+        android:layout_marginLeft="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextlayout"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/buttonDivider"
+        android:background="@drawable/button_custom"
+
+        android:onClick="cerrarVentana"
+        android:text="@string/cancel_button_label"
+        android:textColor="@color/text_color"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rcl.appuem.MainActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/scrim_gradient2">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/flor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/scrim_gradient" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:layout_marginTop="200dp"/>
+
+
+            <TextView
+                android:id="@+id/textTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
+                android:text="Tap for Context Menu"
+                android:textColor="#673AB7" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="400dp"
+                android:clickable="true"
+                android:onClick="siguientePantalla"
+                android:src="@drawable/buffer"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/apptheme_btn_default_normal_holo_light" />
+
+
+            <!--esto sirve para poner una imagen circular-->
+           <!-- <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/flipper"
+                app:civ_border_color="#F44336"
+                app:civ_border_width="8dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#0000"
+                app:civ_shadow_radius="10" /> -->
+
+            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                android:id="@+id/circularFillableLoaders"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/flipper"
+                app:cfl_border="true"
+                app:cfl_border_width="12dp"
+                app:cfl_progress="80"
+                app:cfl_wave_amplitude="0.06"
+                app:cfl_wave_color="#3f51b5" />
+
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+
+
+
+

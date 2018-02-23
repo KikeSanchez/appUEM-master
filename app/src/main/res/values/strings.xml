@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">UEM</string>
+    <string name="username_Hint">Username</string>
+    <string name="password_Hint">Password</string>
+    <string name="login_button_label">Sign In</string>
+    <string name="sign_up_text">Don\'t have an account? Sign Up!</string>
+    <string name="image_description">imagen de fondo</string>
+    <string name="subtitle">A UEM Project</string>
+    <string name="email_hit">Email</string>
+    <string name="sign_up_button_label">SIGN UP</string>
+    <string name="cancel_button_label">CANCEL</string>
+    <string name="title">Title</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="add_button">Añadir</string>
+    <string name="update_button">Actualizar</string>
+    <string name="delete_button">borrar</string>
+
+
+    <string-array name="names_array">
+        <item>Miguel</item>
+        <item>Juliana</item>
+        <item>Cristobal</item>
+        <item>Amy</item>
+        <item>Jason</item>
+        <item>Melissa</item>
+        <item>David</item>
+        <item>Michelle</item>
+        <item>James</item>
+        <item>Kimberly</item>
+        <item>Juan</item>
+        <item>Lisa</item>
+        <item>Roberto</item>
+        <item>Ángela</item>
+        <item>Brian</item>
+        <item>Ricardo</item>
+        <item>Christina</item>
+        <item>Scott</item>
+        <item>Amanda</item>
+        <item>Mark</item>
+        <item>Julie</item>
+        <item>Mary</item>
+        <item>Jeffrey</item>
+        <item>Kelly</item>
+        <item>Enrique</item>
+        <item>Rebeca</item>
+        <item>Kevin</item>
+        <item>Elisabeth</item>
+        <item>Daniel</item>
+        <item>Jessica</item>
+    </string-array>
+</resources>

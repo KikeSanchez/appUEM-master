@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\21609716\AndroidStudioProjects\appUEM-master\appUEM.iml" filepath="C:\Users\21609716\AndroidStudioProjects\appUEM-master\appUEM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appUEM-master.iml" filepath="$PROJECT_DIR$/appUEM-master.iml" />
+    </modules>
+  </component>
+</project>
